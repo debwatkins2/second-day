@@ -35,38 +35,48 @@ h5 {
    text-align: center;
    font-size: 16px;
 }
-.video {
-   left: 50%;
-   position: relative;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   margin-top: 240px;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
 }
-.dancing {
-   max-height: 640px;
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.funny-puppies {
+    width: 23%;
+    height: 300px;
+    padding-left: 2%;
+    display: inline-block;
+    margin-top: 4%;
+    margin-left: 1%;
+    box-sizing: border-box;
 }
 .funny-puppies img {
-   height: 300px;
-   width: 325px;
-   margin-right: 5px;
-   margin-left: 20px;
-   margin-top: 30px;
-   margin-bottom: 30px;
+   height: 280px;
+   width: 96%;
+}
+.jokes {
+    width: 22%;
+    margin-left: 2%;
+    display: inline-block;
 }
 p {
   height: 300px;
-  width: 280px;
+  width: 300px;
   background: white;
   text-align: center;
-  display: inline-flex;
   border: 4px solid black;
-  font-size: 26px;
-  padding-top: 25px;
-  padding-left: 40px;
-  margin-top: 40px;
-  margin-left: 30px;
-  margin-right: 41px;
+  font-size: 22px;
+  padding: 13%;
   box-sizing: border-box;
+  margin-left: 4%;
 }
 .emoji {
   height:250px;
@@ -74,4 +84,50 @@ p {
   padding-left: 5px;
   background-image: url(img/download.jpeg);
   background-repeat: repeat-x;
+}
+.finished {
+    width: 100%;
+    height: 110px;
+    text-align: center;
+}
+.arrow i {
+      font-size: 300%;
+      color: black;
+      opacity: .8;
+      float: right;
+      margin-right: 5%;
+      border: 5px solid black;
+      border-radius: 15px;
+}
+.arrow i:hover {
+      color: #ff4300;
+}
+
+
+
+@media screen and (max-width: 778px) {
+  .funny-puppies {
+    width: 46%;
+    display: inline-block;
+  }
+  .funny-puppies img {
+    width: 94%;
+    height: 300px;
+  }
+  .jokes  {
+    width: 46%;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 482px) {
+
+  .funny-puppies {
+    width: 96%;
+    margin-left: 3%;
+  }
+  .jokes {
+    width: 96%;
+    margin-left: 3%;
+  }
 }
